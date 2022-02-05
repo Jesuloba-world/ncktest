@@ -12,9 +12,9 @@ import { ReactComponent as Wifi } from "../../../assets/svg/wifi.svg";
 import { ReactComponent as MasterCard } from "../../../assets/svg/mastercard.svg";
 import chipImage from "../../../assets/chip.png";
 
-export const Card = ({ getValue }) => {
-	const creditCardNumber = getValue("creditCardNumber");
-	const expirationDate = getValue("expirationDate");
+export const Card = ({ watch }) => {
+	const creditCardNumber = watch("creditCardNumber");
+	const expirationDate = watch("expirationDate");
 
 	return (
 		<Container>

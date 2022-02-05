@@ -12,7 +12,7 @@ const schema = yup.object().shape({
 });
 
 export const Payment = () => {
-	const { handleSubmit, getValues, register, setValue } = useForm({
+	const { handleSubmit, watch, register, setValue } = useForm({
 		resolver: yupResolver(schema),
 	});
 
@@ -25,7 +25,7 @@ export const Payment = () => {
 			<Frame>
 				<Title>Payment Information</Title>
 				<SubTitle>Choose your method of payment</SubTitle>
-				<Card getValue={getValues} />
+				<Card watch={watch} />
 			</Frame>
 			<Frame>
 				<PayTypes />
