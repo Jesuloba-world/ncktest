@@ -16,7 +16,7 @@ export const PayTypes = () => {
 				<Discover className="discover" />
 			</VisaAndDiscover>
 			<PayPal>
-				<ChoosePaypal type="radio" id="paypal" />
+				<ChoosePaypal type="checkbox" id="paypal" />
 				<label htmlFor="paypal">
 					<Paypal />
 				</label>
