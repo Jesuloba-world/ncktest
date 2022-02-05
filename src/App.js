@@ -1,5 +1,5 @@
 import { Container } from "./containers";
-import { NavBar, HorizontalLine, Payment } from "./components";
+import { NavBar, HorizontalLine, Payment, Price } from "./components";
 
 function App() {
 	return (
@@ -7,6 +7,8 @@ function App() {
 			<NavBar />
 			<HorizontalLine />
 			<Payment />
+			<HorizontalLine />
+			<Price />
 			<HorizontalLine />
 		</Container>
 	);

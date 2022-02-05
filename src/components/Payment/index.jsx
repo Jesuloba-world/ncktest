@@ -12,13 +12,7 @@ const schema = yup.object().shape({
 });
 
 export const Payment = () => {
-	const {
-		handleSubmit,
-		getValues,
-		register,
-		formState: { errors },
-		setValue,
-	} = useForm({
+	const { handleSubmit, getValues, register, setValue } = useForm({
 		resolver: yupResolver(schema),
 	});
 
